@@ -14162,11 +14162,11 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>I would pick Decision Tree among others to go ahead and fine tune its parameters for the following reasons:</p>
+<p>I would pick Decision Tree, among others, to go ahead and fine tune its parameters for the following reasons:</p>
 <ol>
-<li>On the test set, the F score is almost similar for all the three learners - Random Forest, Logistic Regression and Decision Tree. On the training set though, decision tree is performing far better than logistic regression. </li>
-<li>Prediction and training time for Random Forest is worst among the three learners. Although the prediction/training time for logistic regression is slightly better than decision trees, the difference is not significant.</li>
-<li>From the perspective of interpretability too, decision tree is better than random forest. Besides, among other models, decision tree is something that can be easily explained to business teams without much usage of technical jargon. </li>
+<li>On the test set, the F score is almost similar for all the three learners - Random Forest, Logistic Regression and Decision Tree. So, there isn't a distinction here. </li>
+<li>Prediction and training time for Random Forest is worst among the three learners. Although the prediction/training time for logistic regression is slightly better than decision trees, the difference is not significant. However, for this dataset the time complexity might not be a hurdle since all the three models train under 1 second. But, for scalability purposes though, Random Forest might not be the best one to pick.</li>
+<li>From the perspective of interpretability too, decision tree is better than random forest. Besides, among other models, decision tree is something that can be easily explained to business teams without much usage of technical jargon. Additionally, since all the three models performances are more or less similar, I would rather pick a simpler model (Occum's razor). Finally, the dataset involves a mix of catagorical and numerical features - making DT the best fit for the task at hand.</li>
 </ol>
 
 </div>
@@ -14191,6 +14191,8 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>The decision tree model will predict whether the income of the individual is greater than or less than (or equal) to 50K dollars, given the input features such as age, education level, occupation, etc. The data given is split into training and testing sets. The training set is used for building the model and the testing set is used for testing the goodness of the model. The goodness of the model, in turn, is defined by combining accuray and precision of the model. Once the model is built, any further predictions can be made as to whether the individual earns above or below 50K dollars.</p>
+<p>As per Wikipedia, "a decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements."</p>
+<p>Reference : <a href="https://en.wikipedia.org/wiki/Decision_tree">https://en.wikipedia.org/wiki/Decision_tree</a></p>
 
 </div>
 </div>
